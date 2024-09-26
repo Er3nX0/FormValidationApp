@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Niepoprawny adres email", Toast.LENGTH_SHORT).show();
                 } else if (phoneNumber.isEmpty()){
                     Toast.makeText(MainActivity.this, "Proszę wprowadzić numer telefonu", Toast.LENGTH_SHORT).show();
-                }else if (phoneNumber.length() != 9){
+                }else if (phoneNumber.length() < 9){
                     Toast.makeText(MainActivity.this, "Proszę wprowadzić prawidlowy numer telefonu", Toast.LENGTH_SHORT).show();
                 }else if (password.isEmpty()){
                     Toast.makeText(MainActivity.this, "Proszę wprowadzić hasło", Toast.LENGTH_SHORT).show();
